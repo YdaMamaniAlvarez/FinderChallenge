@@ -1,0 +1,120 @@
+doctype html
+html(lang="es")
+    head
+        title Finder challenge
+        meta(charset="utf-8")
+        meta(viewport="width=device-width, initial-scale=1.0")
+        link(href="https://fonts.googleapis.com/css?family=Proxima+Nova", rel="stylesheet", type="text/css")
+        link(href="/vendor/pure/pure-min.css", rel="stylesheet")
+        link(href="/styles/index.css", rel="stylesheet")
+
+    body
+        .app.pure-g
+            header.pure-u-1
+                .pure-u-7-24.pure-md-1-3.pure-lg-1-3
+                    h1.logo Finder challenge!
+                .pure-u-12-24.pure-md-1-3.pure-lg-1-3
+                    include blocks/search-form
+                .pure-u-4-24.pure-md-1-3.pure-lg-1-3.save-search
+                    a(href="#", target="_self") Guardar búsqueda
+            aside.filters.pure-u-6-24
+                .pure-u-1
+                    h2.sub-menu Búsquedas guardadas
+                    ul
+                      li
+                          a(href="#", target="_self") terror puro
+                      |
+                      li
+                          a(href="#", target="_self") Editar
+                      |
+                      li
+                          a(href="#", target="_self") search drama
+                      |
+                      li
+                          a(href="#", target="_self") comedias en ingles
+                .pure-u-1
+                      h2.sub-menu Categorías
+                      ul
+                        li
+                            a(href="#", target="_self") Todos
+                        |
+                        li
+                            a(href="#", target="_self") Terror
+                        |
+                        li
+                            a(href="#", target="_self") Comedia
+                        |
+                        li
+                            a(href="#", target="_self") Drama
+                            .pure-u-1
+                      h2.sub-menu Publicación
+                      ul
+                        li
+                          a(href="#", target="_self") Todos
+                        |
+                        li
+                          a(href="#", target="_self") Hoy
+                        |
+                        li
+                          a(href="#", target="_self") Hace una semana
+                        |
+                        li
+                          a(href="#", target="_self") Hace un mes
+                        |
+                        li
+                          a(href="#", target="_self") Hace un año
+                      .pure-u-1
+                        h2.sub-menu Presentación
+                        ul
+                          li
+                            a(href="#", target="_self") Impreso
+                          |
+                          li
+                            a(href="#", target="_self") Digital
+                          |
+                          li
+                            a(href="#", target="_self") Impreso y digital
+            content.pure-u-17-24
+              .pure-u-1
+                .pure-u-8-24
+                  .movie
+                    img(src="http://dummyimage.com/150x150/DDDDDD/000000/&text=Devil At The Catacombs", alt="Devil At The Catacombs")
+                    h3 Devil At The Catacombs
+                    p.synopsis Et porro recusandae labore cum labore esse aperiam. Aut id dolorum praesentium quidem eveniet optio quas cupiditate dolorem. Cupiditate vel animi nulla aspernatu
+                .pure-u-7-24
+                  .movie
+                    img(src="http://dummyimage.com/150x150/DDDDDD/000000/&text=Angels Without A Mouth", alt="Angels Without A Mouth")
+                    h3 Angels Without A Mouth
+                    p.synopsis Autem et ab commodi dolor magni quo aspernatur cum aspernatur. Sed ullam blanditiis qui. Sequi saepe ut blanditiis architecto hic deserunt ullam et. Repellat quia earum ea eveniet facilis aperiam temporibus deleniti. Aliquam id voluptatem reprehenderit laudantium deleniti inventore rerum non culpa. Aut sint maxime illum quia.
+                .pure-u-8-24
+                  .movie
+                    img(src="http://dummyimage.com/150x150/DDDDDD/000000/&text=Fish Looking At Me", alt="Fish Looking At Me")
+                    h3 Fish Looking At Me
+                    p.synopsis Et porro recusandae labore cum labore esse aperiam. Aut id dolorum praesentium quidem eveniet optio quas cupiditate dolorem. Cupiditate vel animi nulla aspernatur nemo.
+              .pure-u-1
+                .pure-u-8-24
+                  .movie
+                    img(src="http://dummyimage.com/150x150/DDDDDD/000000/&text=Foreigners And Hunters", alt="Foreigners And Hunters")
+                    h3 Foreigners And Hunters
+                    p.synopsis Et porro recusandae labore cum labore esse aperiam. Aut id dolorum praesentium quidem eveniet optio quas cupiditate dolorem. Cupiditate vel animi nulla aspernatu
+                .pure-u-7-24
+                  .movie
+                    img(src="http://dummyimage.com/150x150/DDDDDD/000000/&text=Zombies And Horses", alt="Zombies And Horses")
+                    h3 Zombies And Horses
+                    p.synopsis Autem et ab commodi dolor magni quo aspernatur cum aspernatur. Sed ullam blanditiis qui. Sequi saepe ut blanditiis architecto hic deserunt ullam et. Repellat quia earum ea eveniet facilis aperiam temporibus deleniti. Aliquam id voluptatem reprehenderit laudantium deleniti inventore rerum non culpa. Aut sint maxime illum quia.
+                .pure-u-8-24
+                  .movie
+                    img(src="http://dummyimage.com/150x150/DDDDDD/000000/&text=Temptation Hiding From Me", alt="Temptation Hiding From Me")
+                    h3 Temptation Hiding From Me
+                    p.synopsis Et porro recusandae labore cum labore esse aperiam. Aut id dolorum praesentium quidem eveniet optio quas cupiditate dolorem. Cupiditate vel animi nulla aspernatur nemo.
+
+
+            footer.pure-u-1
+
+        //- third party libraries
+        script(src="/vendor/underscore/underscore-min.js")
+
+        //- app scripts self
+        script(src="/scripts/global.js")
+        script(src="/scripts/search-form.js")
+        script(src="/scripts/app.js")

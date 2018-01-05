@@ -1,0 +1,39 @@
+* {
+  font-family: "Proxima Nova";
+}
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.logo {
+  color: #0078e7;
+}
+.movie {
+  padding: 0 10px 0 10px;
+}
+p {
+  font-size: 0.8em;
+  text-align: justify;
+}
+.synopsis {
+  width: 100%;
+}
+ul {
+  list-style: none;
+}
+.search-form {
+  margin-top: 30px;
+}
+.save-search {
+  margin-top: 35px;
+}
+@media only screen and (max-width: 650px) {
+  .search-form {
+    display: none;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .save-search {
+    display: none;
+  }
+}
